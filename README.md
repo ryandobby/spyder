@@ -16,7 +16,7 @@
 
 ### API Token
 
-1|JiDdb3tvlMnps8SsMKuMOx8otw1bocWa7sv4nyDE
+1|1JxvphkU1elblAHJuBabiqkOAxLhd2mknLC8t6C2
 
 ## License
 

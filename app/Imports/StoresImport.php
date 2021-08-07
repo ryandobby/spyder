@@ -16,7 +16,7 @@ class StoresImport implements ToModel, WithStartRow
     public function model(array $row)
     {
         return new Store([
-            'store' => $row[0],
+            'store_number' => $row[0],
             'cbsa' => $row[1],
             'address' => $row[2],
             'city' => $row[3],

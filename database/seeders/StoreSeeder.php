@@ -2,7 +2,10 @@
 
 namespace Database\Seeders;
 
+use App\Imports\StoresImport;
+use App\Models\Store;
 use Illuminate\Database\Seeder;
+use Maatwebsite\Excel\Facades\Excel;
 
 class StoreSeeder extends Seeder
 {
@@ -13,6 +16,7 @@ class StoreSeeder extends Seeder
      */
     public function run()
     {
-        //
+        Excel::import(new StoresImport, storage_path('app/ogp_stores.xlsx'));
+        $this->command->info('Imported ' . Store::count() . ' records.');
     }
 }

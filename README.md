@@ -14,6 +14,10 @@
 
 5. When you're done, please turn in 1) a link to the Git repository for the project code that implements the functionality 2) a link to the running API for me to test out (including any necessary authentication and endpoint details).
 
+### API Token
+
+1|JiDdb3tvlMnps8SsMKuMOx8otw1bocWa7sv4nyDE
+
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).

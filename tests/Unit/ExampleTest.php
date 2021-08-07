@@ -21,11 +21,11 @@ class ExampleTest extends TestCase
     }
 
     /**
-     * A basic test example.
+     * Test the store show endpoint.
      *
      * @return void
      */
-    public function test_example()
+    public function test_it_can_get_a_store()
     {
         $store = Store::first();
 
@@ -37,5 +37,22 @@ class ExampleTest extends TestCase
         $response->assertJsonFragment([
             'id' => $store->getKey(),
         ]);
+    }
+
+    /**
+     * Test the store state endpoint.
+     *
+     * @return void
+     */
+    public function test_it_can_get_all_stores_by_state()
+    {
+        $stores = Store::whereState('OK');
+
+        $response = $this->actingAs($this->user, 'sanctum')
+                         ->post(route('api.stores.state'), ['state' => 'OK']);
+
+        $response->assertStatus(200);
+
+        $response->assertJsonCount($stores->count());
     }
 }

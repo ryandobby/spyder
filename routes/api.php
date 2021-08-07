@@ -23,4 +23,12 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::get('/stores/{store:store_number}', function (Store $store) {
         return $store;
     })->name('api.stores.show');
+
+    Route::post('/stores/state', function (Request $request) {
+        $validated = $request->validate([
+            'state' => ['required', 'string', 'size:2']
+        ]);
+
+        return Store::whereState($validated['state'])->get();
+    })->name('api.stores.state');
 });

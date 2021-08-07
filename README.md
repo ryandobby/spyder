@@ -14,10 +14,26 @@
 
 5. When you're done, please turn in 1) a link to the Git repository for the project code that implements the functionality 2) a link to the running API for me to test out (including any necessary authentication and endpoint details).
 
-### API Token
+---
 
-1|1JxvphkU1elblAHJuBabiqkOAxLhd2mknLC8t6C2
+## API Token
 
-## License
+`1|vT0mkaReD42VKWg8i4fv2ZGitcXKgNdu3QE9Mg8o`
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+(Note: This is an authorization bearer token)
+
+## Usage
+
+#### Store Show Endpoint:
+
+```
+GET spyder.ryandobyns.com/api/stores/{store_number}
+```
+
+#### Stores by State Endpoint:
+
+```
+POST spyder.ryandobyns.com/api/stores/{state_abbreviation}
+```
+
+(Note: State abbreviations are must be a string with two characters, case insensitive.)

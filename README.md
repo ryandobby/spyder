@@ -36,4 +36,4 @@ GET spyder.ryandobyns.com/api/stores/{store_number}
 POST spyder.ryandobyns.com/api/stores/{state_abbreviation}
 ```
 
-(Note: State abbreviations are must be a string with two characters, case insensitive.)
+(Note: State abbreviations must be a string with two characters, case insensitive.)

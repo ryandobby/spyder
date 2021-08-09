@@ -22,6 +22,10 @@
 
 (Note: This is an authorization bearer token)
 
+```
+HEADER Accept application/json
+```
+
 ## Usage
 
 #### Store Show Endpoint:
@@ -33,7 +37,9 @@ GET spyder.ryandobyns.com/api/stores/{store_number}
 #### Stores by State Endpoint:
 
 ```
-POST spyder.ryandobyns.com/api/stores/{state_abbreviation}
+POST spyder.ryandobyns.com/api/stores/state
+
+PARAM 'state' => 'OK'
 ```
 
 (Note: State abbreviations must be a string with two characters, case insensitive.)

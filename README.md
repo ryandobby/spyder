@@ -18,7 +18,7 @@
 
 ## API Token
 
-`1|vT0mkaReD42VKWg8i4fv2ZGitcXKgNdu3QE9Mg8o`
+`1|UTozHG0VxaYC7Vf7h3kTiZAXRyVxhVV3HmB3DbHB`
 
 (Note: This is an authorization bearer token)
 
